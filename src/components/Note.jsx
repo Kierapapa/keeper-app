@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Note = () => {
+const Note = ({id, title, content}) => {
     return (
         <div className="note">
-            <h1>A note title</h1>
-            <p>Content of the note</p>
+            <h1 value={id}>{title}</h1>
+            <p>{content}</p>
         </div>
     )
 }
