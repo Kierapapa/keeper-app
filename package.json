@@ -5,8 +5,10 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
@@ -14,6 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -23,5 +27,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "http://kierapapa.github.io/keeper-app/"
 }
