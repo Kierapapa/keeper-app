@@ -6,6 +6,7 @@ const NavMenu = () => {
         <div className="navbar">
             <Link to="/">Home</Link>
             <Link to="/my-contact">My Contact</Link>
+            <Link to="/emoji-pedia">Emoji Pedia</Link>
         </div>
     )
 }

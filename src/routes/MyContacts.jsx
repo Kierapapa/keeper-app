@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../components/Card';
 import contacts from '../contacts';
-import Avatar from './Avatar';
+import Avatar from '../components/Avatar';
 
 const MyContacts = () => {
     return (

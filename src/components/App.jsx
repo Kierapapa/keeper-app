@@ -2,8 +2,9 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import {HashRouter, Route} from 'react-router-dom'
-import Home from './Home'
-import MyContacts from './MyContacts'
+import Home from '../routes/Home'
+import MyContacts from '../routes/MyContacts'
+import EmojiPedia from '../routes/EmojiPedia'
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <Header />
             <Route path="/" exact={true} component={Home} />
             <Route path="/my-contact" component={MyContacts} />
+            <Route path="/emoji-pedia" component={EmojiPedia} />
             <Footer />
             </HashRouter>
             
