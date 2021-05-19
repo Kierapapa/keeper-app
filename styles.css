@@ -8,6 +8,7 @@ html {
 }
 body {
   background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
   padding: 0 16px;
 }
 
@@ -62,6 +63,43 @@ footer {
 footer p {
   color: #c6c6c6;
 }
+
+.addnote-container {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.addnote-container input,
+.addnote-container textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+.addnote-container button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f5ba13;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
 .note {
   background: #fff;
   border-radius: 7px;
@@ -81,6 +119,18 @@ footer p {
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
 }
 
 
@@ -361,6 +411,7 @@ form button {
   color: hsla(260, 2%, 25%, 0.7);
   width: 70%;
   margin-bottom: 20px;
+  outline: none;
 }
 
 .todo-container .container .form button {
